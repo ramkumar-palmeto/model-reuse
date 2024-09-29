@@ -1,0 +1,68 @@
+unique_name: time
+object_type: dimension
+label: time
+hierarchies:
+  - unique_name: Time
+    label: Time
+    filter_empty: 'yes'
+    levels:
+      - unique_name: Year
+      - unique_name: Semester
+      - unique_name: Quarter
+      - unique_name: Month
+      - unique_name: Date
+level_attributes:
+  - unique_name: Year
+    label: Year
+    contains_unique_names: false
+    dataset: vwtime
+    is_unique_key: false
+    key_columns:
+      - year_name
+    name_column: year_name
+    time_unit: year
+  - unique_name: Semester
+    label: Semester
+    contains_unique_names: false
+    dataset: vwtime
+    is_unique_key: false
+    key_columns:
+      - half_year
+    name_column: half_year
+    time_unit: halfyear
+  - unique_name: Quarter
+    label: Quarter
+    contains_unique_names: false
+    dataset: vwtime
+    is_unique_key: false
+    key_columns:
+      - quarter_name
+    name_column: quarter_name
+    time_unit: quarter
+  - unique_name: Month
+    label: Month
+    contains_unique_names: false
+    dataset: vwtime
+    is_unique_key: false
+    key_columns:
+      - month
+    name_column: month
+    time_unit: month
+  - unique_name: Date
+    label: Date
+    contains_unique_names: false
+    dataset: vwtime
+    is_unique_key: false
+    key_columns:
+      - dateid
+    name_column: date_name
+    time_unit: day
+  - unique_name: vwtime_empty_attr
+    label: vwtime_empty_attr
+    contains_unique_names: false
+    dataset: vwtime
+    is_hidden: true
+    is_unique_key: false
+    key_columns: []
+    name_column: ''
+type: time
