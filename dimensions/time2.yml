@@ -28,7 +28,7 @@ level_attributes:
     is_unique_key: false
     key_columns:
       - half_year
-    name_column: half_year
+    name_column: half_year_name
     time_unit: halfyear
   - unique_name: Quarter
     label: Quarter
@@ -36,7 +36,7 @@ level_attributes:
     dataset: vwtime2
     is_unique_key: false
     key_columns:
-      - quarter_name
+      - quarter
     name_column: quarter_name
     time_unit: quarter
   - unique_name: Month
@@ -46,7 +46,7 @@ level_attributes:
     is_unique_key: false
     key_columns:
       - month
-    name_column: month
+    name_column: month_name
     time_unit: month
   - unique_name: Date
     label: Date
@@ -57,5 +57,4 @@ level_attributes:
       - dateid
     name_column: date_name
     time_unit: day
-
 type: time
