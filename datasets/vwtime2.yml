@@ -1,6 +1,6 @@
-unique_name: vwtime
+unique_name: vwtime2
 object_type: dataset
-label: vwtime
+label: vwtime2
 columns:
   - name: dateid
     data_type: int
@@ -64,5 +64,5 @@ columns:
     data_type: string
   - name: half_year_of_year_name
     data_type: string
-connection_id: con_postgres_public
+connection_id: con_postgres_public2
 table: vwtime

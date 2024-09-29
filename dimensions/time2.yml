@@ -1,6 +1,6 @@
-unique_name: time
+unique_name: time2
 object_type: dimension
-label: time
+label: time2
 hierarchies:
   - unique_name: Time
     label: Time
@@ -15,7 +15,7 @@ level_attributes:
   - unique_name: Year
     label: Year
     contains_unique_names: false
-    dataset: vwtime
+    dataset: vwtime2
     is_unique_key: false
     key_columns:
       - year_name
@@ -24,7 +24,7 @@ level_attributes:
   - unique_name: Semester
     label: Semester
     contains_unique_names: false
-    dataset: vwtime
+    dataset: vwtime2
     is_unique_key: false
     key_columns:
       - half_year
@@ -33,7 +33,7 @@ level_attributes:
   - unique_name: Quarter
     label: Quarter
     contains_unique_names: false
-    dataset: vwtime
+    dataset: vwtime2
     is_unique_key: false
     key_columns:
       - quarter_name
@@ -42,7 +42,7 @@ level_attributes:
   - unique_name: Month
     label: Month
     contains_unique_names: false
-    dataset: vwtime
+    dataset: vwtime2
     is_unique_key: false
     key_columns:
       - month
@@ -51,7 +51,7 @@ level_attributes:
   - unique_name: Date
     label: Date
     contains_unique_names: false
-    dataset: vwtime
+    dataset: vwtime2
     is_unique_key: false
     key_columns:
       - dateid

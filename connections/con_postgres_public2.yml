@@ -1,6 +1,6 @@
-unique_name: con_postgres_public
+unique_name: con_postgres_public2
 object_type: connection
-label: con_postgres_public
+label: con_postgres_public2
 as_connection: GBQTrainingDB
 database: postgres
 schema: public
